@@ -17,10 +17,10 @@ class RecipeApp(App):
         self.inp_ing = TextInput(hint_text='Ingredientes', hint_text_color = get_color_from_hex('2E522C'), background_color = get_color_from_hex('BAFFC0'))
         self.inp_ins = TextInput(hint_text='Instruções', hint_text_color = get_color_from_hex('2E522C'), background_color = get_color_from_hex('BAFFC0'))
         self.espaco1 = Label(text ='', size_hint =(None, None), size = (10, 5))
-        self.adc_rec = Button(text='Adicionar Receita', size_hint = (None, None), size = (150, 10))
+        self.adc_rec = Button(text='Adicionar Receita', size_hint = (None, None), size = (150, 10), color = get_color_from_hex('BAFFC0'))
         self.adc_rec.bind(on_press=self.add_recipe)
         self.espaco2 = Label(text = '', size_hint = (None, None), size = (150, 50))
-        self.del_rec = Button(text='Apagar Receita', size_hint = (None, None), size = (150, 10))
+        self.del_rec = Button(text='Apagar Receita', size_hint = (None, None), size = (150, 10), color = get_color_from_hex('BAFFC0'))
         self.del_rec.bind(on_press=self.delete_recipe)
 
         self.lista_text = Label(text='Receitas Disponíveis:')
@@ -35,7 +35,7 @@ class RecipeApp(App):
         self.main_layout.add_widget(self.del_rec)
         self.main_layout.add_widget(self.lista_text)
         self.main_layout.add_widget(self.recipe_list)
-        Window.clearcolor = (0,0,0,0)
+        Window.clearcolor = get_color_from_hex('000000')
         Window.size = (500, 700)
         return self.main_layout
         
