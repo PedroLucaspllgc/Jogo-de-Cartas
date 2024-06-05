@@ -1,0 +1,7 @@
+Id: CT01 CN1
+Descrição: Testando a visualização de receitas
+Item de teste: Receitas
+Tipo de teste: Funcionalidade
+Entradas: Bolo simples
+Resultados e comportamentos esperados: Mostrar a receita
+Ambiente: Agente de receitas
